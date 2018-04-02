@@ -65,6 +65,10 @@ minikube dashboard
 === compile the Java code and build the JAR
 
 ```
+cd fn
+```
+
+```
 ./gradlew build
 ```
 
@@ -86,6 +90,18 @@ riff publish --input words --data mydata --reply
 curl http://{{host}}:{{port}}/requests/words -d mydata
 ```
 
+=== create another function and its input topic and set force to overwrite earlier function
+
+```
+riff create java --artifact build/libs/fn-1.0-SNAPSHOT.jar --handler functions.Length --input str --force
+```
+
+=== publish a message and wait for a reply
+
+```
+riff publish --input str --data mydata --reply
+```
+
 === delete the function and its input topic
 
 ```
@@ -98,6 +114,7 @@ You can destroy everything created above by running:
 
 [source, bash]
 ----
+cd $(go env GOPATH)/src/github.com/projectriff/riff
 make teardown
 ----
 

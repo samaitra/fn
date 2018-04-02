@@ -4,6 +4,6 @@ metadata:
   name: fn
 spec:
   protocol: grpc
-  input: words
+  input: str
   container:
     image: saikat/fn:0.0.1

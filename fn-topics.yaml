@@ -1,6 +1,6 @@
 apiVersion : projectriff.io/v1
 kind: Topic
 metadata:	
-  name: words
+  name: str
 spec:
   partitions: 1
