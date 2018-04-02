@@ -1,6 +1,6 @@
 # fn
 
-A collection of functions that can be deployed and scale at 0-N-0 using riff
+A collection of functions that can be deployed and scaled at 0-N-0 using riff
 
 === Prerequisites
 
