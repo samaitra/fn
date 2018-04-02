@@ -13,9 +13,9 @@ You need:
 === To start minikube
 
 [source, bash]
----
+----
 minikube start
----
+----
 
 To build images with docker in minikube use
 
@@ -121,6 +121,6 @@ make teardown
 === To stop minikube
 
 [source, bash]
----
+----
 minikube stop
----
+----
