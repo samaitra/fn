@@ -1,4 +1,5 @@
 # fn
+
 A collection of functions that can be deployed and scale at 0-N-0 using riff
 
 === Prerequisites
@@ -9,7 +10,7 @@ You need:
 * A local 1.7+ Kubernetes cluster
 * A docker daemon
 
-===To start minikube
+=== To start minikube
 
 [source, bash]
 ---
@@ -76,13 +77,13 @@ riff create java --artifact build/libs/fn-1.0-SNAPSHOT.jar --handler functions.H
 === publish a message and wait for a reply
 
 ```
-riff publish --input words --data saikat --reply
+riff publish --input words --data mydata --reply
 ```
 
-=== Or publish message to http-gateway
+=== Or publish message to http-gateway and wait for a reply
 
 ```
-curl http://{{host}}:{{port}}/requests/words -d saikat
+curl http://{{host}}:{{port}}/requests/words -d mydata
 ```
 
 === delete the function and its input topic
@@ -100,7 +101,7 @@ You can destroy everything created above by running:
 make teardown
 ----
 
-===To stop minikube
+=== To stop minikube
 
 [source, bash]
 ---
