@@ -6,4 +6,4 @@ functions:
   gofunction:
     lang: go
     handler: ./gofunction
-    image: gofunction
+    image: samaitra/gofunction
