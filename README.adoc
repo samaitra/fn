@@ -14,7 +14,7 @@ You need:
 
 [source, bash]
 ----
-minikube start
+minikube start --bootstrapper=localkube --memory=4096
 ----
 
 To build images with docker in minikube use
@@ -70,6 +70,12 @@ cd fn
 
 ```
 ./gradlew build
+```
+
+=== Install java invokers
+
+```
+riff invokers apply -f https://github.com/projectriff/java-function-invoker/raw/v0.0.7/java-invoker.yaml
 ```
 
 === create the function and its input topic

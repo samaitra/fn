@@ -1,9 +1,10 @@
-apiVersion: projectriff.io/v1
+---
+apiVersion: projectriff.io/v1alpha1
 kind: Function
 metadata:
   name: fn
 spec:
-  protocol: grpc
-  input: str
   container:
     image: saikat/fn:0.0.1
+  input: words
+  protocol: grpc
