@@ -124,6 +124,13 @@ cd $(go env GOPATH)/src/github.com/projectriff/riff
 make teardown
 ----
 
+To unset the environment variables used for building images with docker in minikube, issue:
+
+[source, bash]
+----
+eval $(minikube docker-env -u)
+----
+
 === To stop minikube
 
 [source, bash]
