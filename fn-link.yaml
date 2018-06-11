@@ -1,0 +1,10 @@
+---
+apiVersion: projectriff.io/v1alpha1
+kind: Link
+metadata:
+  name: fn
+spec:
+  function: fn
+  input: words
+  windowing:
+    size: 1
